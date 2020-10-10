@@ -20,4 +20,4 @@ jobs:
     - name: valgrind check
       run: |
         gcc t.c -pthread -c
-        valgrind ./all.out
+        valgrind chmod 777 ./all.out
