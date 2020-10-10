@@ -17,7 +17,7 @@ jobs:
       run: |
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
-    - name: make t
+    - name: make test
       run: |
-        gcc t.c
+        gcc t.c -pthread -c
         valgrind ./all.out
