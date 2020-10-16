@@ -6,6 +6,7 @@
 #define numthreads 10
 void *warmUp(void*);
 void *adjustEquipment(void*);
+//Resolved
 int countplayers=0;
 int countreferee=0;
 pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
